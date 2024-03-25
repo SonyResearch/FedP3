@@ -41,21 +41,21 @@ python main.py  --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.
 We also conduct extensive experiments on larger networks including ResNet18. An running example is 
 
 ```angular2html
-python main_ours_v2.py  --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
+python main.py  --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
 ### Various Pruning Strategies
 We are allowed to choose different pruning strategies, `fixed`, `uniform`, `od`. 
 
 ```angular2html
-python main_ours_v1.py --pruning [fixed|uniform|od] --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
+python main.py --pruning [fixed|uniform|od] --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
 ### Flexible Aggregation Strategies
 We are allowed to choose different pruning strategies, `mean`, `weight`. 
 
 ```angular2html
-python main_ours_v3.py --agg [mean|weight] --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
+python main.py --agg [mean|weight] --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
 
