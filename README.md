@@ -1,7 +1,10 @@
-# FedP3: Federated Personalized and Privacy-friendly Network Pruning under Model Heterogeneity
-This repository implements the paper: "FedP3: Federated Personalized and Privacy-friendly Network Pruning under Model Heterogeneity." Kai Yi, Nidham Gazagnadou, Peter Richtarik, Lingjuan Lyu. ICLR, 2024. 
+# FedP3
 
-[paper](https://openreview.net/forum?id=hbHwZYqk9T) / [code](https://github.com/SonyResearch/Fedp3)
+**FedP3: Federated Personalized and Privacy-friendly Network Pruning under Model Heterogeneity**\
+Kai Yi, Nidham Gazagnadou, Peter Richtarik, Lingjuan Lyu\
+ICLR 2024
+
+[[Paper](https://openreview.net/forum?id=hbHwZYqk9T)]
 
 ![](img/tissue-1.png)
 
@@ -11,19 +14,11 @@ Assuming a scenario where each client possesses varied memory storage, processin
 In response to this, we present an effective and adaptable federated framework **FedP3**, representing **Fed**erated **P**ersonalized and **P**rivacy-friendly network **P**runing, tailored for model heterogeneity scenarios. 
 Our proposed methodology can incorporate and adapt well-established techniques to its specific instances. We offer a theoretical interpretation of FedP3 and its locally differential-private variant, DP-FedP3, and theoretically validate their efficiencies.
 
-## Citation
-If you plan to use our code in your research, please cite below:
-
-```bibtex
-@article{FedP3,
-	author={Yi, Kai and Gazagnadou, Nidham and Richtarik, Peter and Lyu, Lingjuan},
-	journal={International Conference on Learning Representations (ICLR)},
-	title = {FedP3: Federated Personalized and Privacy-friendly Network Pruning under Model Heterogeneity},
-	year = {2024}}
-```
 
 ## Getting Started
+
 ### Environment Setup
+
 ```angular2html
 # create a conda virtual environment
 conda create -n fedp3 python=3.8
@@ -63,15 +58,23 @@ We are allowed to choose different pruning strategies, `mean`, `weight`.
 python main_ours_v3.py --agg [mean|weight] --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
+
 ## Future Work
 - [ ] Allow partial client participation
+
 
 ## Contact
 
 If you have any questions regarding the code and the paper, please feel free to contact Kai Yi (williamyi96@gmail.com).
 
 
-###### Copyright 2023, Sony AI, All rights reserved.
+## Citation
+If you find this repository useful for your research, please consider citing our work:
 
-
-
+```bibtex
+@article{FedP3,
+	author={Yi, Kai and Gazagnadou, Nidham and Richtarik, Peter and Lyu, Lingjuan},
+	journal={International Conference on Learning Representations (ICLR)},
+	title = {FedP3: Federated Personalized and Privacy-friendly Network Pruning under Model Heterogeneity},
+	year = {2024}}
+```
