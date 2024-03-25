@@ -35,13 +35,13 @@ We first provide the ablation studies of `FedAvg`, `LowerB`, `OPU2` and `OPU3` u
 Our code supports downloading every dataset automatically from their corresponding official website. An running example is as follows:
 
 ```angular2html
-python main.py  --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
+python main.py --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
 We also conduct extensive experiments on larger networks including ResNet18. An running example is 
 
 ```angular2html
-python main.py  --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
+python main.py --filepath OPU2_0000.txt --dataset CIFAR10 --method OPU2 --lr 0.01 --local_ep 10 --lr_decay 1 --rule noniid --dir_a 0.5 --gpu 0 --epoch 500 --beta 0.001 --bs 10 --local_bs 48
 ```
 
 ### Various Pruning Strategies
