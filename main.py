@@ -39,9 +39,9 @@ if __name__ == '__main__':
     data_path = 'Folder/'
     data_obj = DatasetObject(dataset=args.dataset, n_client=args.num_users, seed=args.seed, rule=args.rule, class_main=args.class_main, data_path=data_path, frac_data=args.frac_data, dir_alpha=args.dir_a)
 
-    clnt_x = data_obj.clnt_x;
-    clnt_y = data_obj.clnt_y;
-    tst_x = data_obj.tst_x;
+    clnt_x = data_obj.clnt_x
+    clnt_y = data_obj.clnt_y
+    tst_x = data_obj.tst_x
     tst_y = data_obj.tst_y
 
     # build model
