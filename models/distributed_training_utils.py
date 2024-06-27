@@ -12,7 +12,6 @@ from typing import Any, Callable, Mapping, Sequence, Tuple
 
 max_norm = 10
 
-
 def add(target, source):
     for name in target:
         target[name].data += source[name].data.clone()
